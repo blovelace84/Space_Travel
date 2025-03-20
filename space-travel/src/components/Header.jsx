@@ -1,18 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Header = () => {
-    return(
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="/"></a>Home</li>
-                    <li><a href="/spacecrafts"></a>Spacecraft</li>
-                    <li><a href="/planets"></a>Planets</li>
-                </ul>
-            </nav>
-        </header>
-    );
+function Header() {
+  return (
+    <header>
+      <div className="header-content"> 
+        <h1>Space Travel: Expanding Horizons Beyond Earth</h1> 
+        <nav>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/spacecrafts">Spacecrafts</Link></li>
+            <li><Link to="/planets">Planets</Link></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
 }
 
 export default Header;
