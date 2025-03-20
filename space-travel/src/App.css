@@ -1,14 +1,40 @@
 body {
   background-color: #000;
   color: #fff;
+  justify-content: center;
+  align-items: center;
   font-family: sans-serif;
   margin: 0;
+  padding: 0;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
-  background-color: #111;
-  padding: 10px 0;
-  text-align: center;
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+header a:hover {
+  text-decoration: underline;
 }
 
 .header-content{
@@ -20,6 +46,16 @@ header {
 header h1{
   font-size: 2rem;
   margin-bottom: 10px;
+}
+
+main{
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -58,16 +94,18 @@ accordion-content {
 }
 
 footer {
-  background-color: #111;
-  padding: 10px;
+  background-color: #2c3e50;
+  color: white;
   text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
-.footer-links {
-  margin-top: 10px;
-}
-
-footer-links a {
-  color: #fff;
-  margin: 0 10px;
+footer h2{
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }
